@@ -1,17 +1,11 @@
-using System.Collections;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 using UnityEngine.InputSystem.Layouts;
+using UnityEngine.InputSystem.OnScreen;
+using UnityEngine.Serialization;
 
-////TODO: custom icon for OnScreenStick component
-
-namespace UnityEngine.InputSystem.OnScreen
+namespace DefaultNamespace.Gameplay.Controls
 {
-	/// <summary>
-	/// A stick control displayed on screen and moved around by touch or other pointer
-	/// input.
-	/// </summary>
-	[AddComponentMenu("Input/On-Screen Stick")]
 	public class FloatingOnScreenStick : OnScreenControl, IPointerDownHandler, IPointerUpHandler, IDragHandler
 	{
 		public void OnPointerDown(PointerEventData eventData) {
@@ -43,9 +37,6 @@ namespace UnityEngine.InputSystem.OnScreen
 		public void OnPointerUp(PointerEventData eventData) {
 			((RectTransform) transform).anchoredPosition = m_StartPos;
 			SendValueToControl(Vector2.zero);
-		}
-
-		private void Update() {
 		}
 
 		public float movementRange {

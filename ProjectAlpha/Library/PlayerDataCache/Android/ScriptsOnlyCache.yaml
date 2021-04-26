@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DefaultNamespace.Gameplay.Controls.FloatingOnScreenStick
     - DefaultNamespace.InputManager
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputActionEditorWindow
@@ -10,7 +11,6 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
-    - UnityEngine.InputSystem.OnScreen.OnScreenStick
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Rider.Editor.dll:
@@ -35,9 +35,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -62,9 +70,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3816}
-    - Class: 114
       Script: {instanceID: 4270}
+    - Class: 114
+      Script: {instanceID: 16070}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -720,6 +728,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: DefaultNamespace
     className: InputManager
+  - hash:
+      serializedVersion: 2
+      Hash: 426e5bd616852254b77531cd1a8e29b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: DefaultNamespace.Gameplay.Controls
+    className: FloatingOnScreenStick
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
