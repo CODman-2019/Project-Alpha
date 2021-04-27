@@ -9,7 +9,8 @@ namespace DefaultNamespace.Managers
         #region Variables
         public bool debug = false;
     
-        [Header("GameObjects to be Pooled")] public GameObjectToBePooled[] gameObjectsToBePooled;
+        [Header("Assignables")] 
+        public GameObjectToBePooled[] gameObjectsToBePooled;
 
         private List<GameObject> _pooledGameObjects = new List<GameObject>();
 
